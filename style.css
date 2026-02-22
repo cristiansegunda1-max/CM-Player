@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0f0f15;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, #1e1e2f, #0a0a12);
+  z-index: -1;
+}
+
+.glass-player {
+  width: 320px;
+  padding: 30px;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+  text-align: center;
+  color: white;
+}
+
+.cover {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.controls button {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  color: white;
+  font-size: 20px;
+  backdrop-filter: blur(20px);
+}
