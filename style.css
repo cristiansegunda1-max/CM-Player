@@ -122,3 +122,18 @@ body {
   transform: scale(0.85);
   opacity: 0.5;
 }
+
+.glass-library button {
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s ease;
+}
+
+.glass-library button:active {
+  transform: scale(0.9);
+}
