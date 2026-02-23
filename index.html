@@ -8,23 +8,37 @@
 </head>
 <body>
 
-  <div class="background"></div>
+ <div class="background"></div>
 
+<!-- PANTALLA PLAYER -->
+<div class="screen active" id="playerScreen">
   <div class="glass-player">
     <img src="assets/cover.jpg" class="cover">
     <h2 class="title">Nombre de la Canción</h2>
     <p class="artist">Artista</p>
-    
+
     <div class="progress-container">
-  <div class="progress"></div>
-</div>
+      <div class="progress"></div>
+    </div>
 
     <audio id="audio" src="assets/music.mp3"></audio>
 
     <div class="controls">
       <button onclick="togglePlay()">⏯</button>
     </div>
+
+    <button class="library-btn" onclick="openLibrary()">Biblioteca</button>
   </div>
+</div>
+
+<!-- PANTALLA BIBLIOTECA -->
+<div class="screen" id="libraryScreen">
+  <div class="glass-library">
+    <h2>Tu Música</h2>
+    <ul id="songList"></ul>
+    <button class="back-btn" onclick="closeLibrary()">Volver</button>
+  </div>
+</div>
 
 <script src="script.js"></script>
 <script>
