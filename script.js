@@ -113,3 +113,7 @@ function previousSong() {
     (currentIndex - 1 + songs.length) % songs.length;
   changeSong(songs[currentIndex]);
 }
+
+async function scanDeviceMusic() {
+  console.log("Escaneo pendiente para versión Android nativa");
+}
